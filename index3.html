@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Khushbu Kumari — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style3.css">
+</head>
+<body>
+
+<nav id="navbar">
+  <div class="logo">Khushbu<span>.</span></div>
+  <ul id="menu">
+    <li><a href="#home" class="active">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">
+    <i class="fa fa-bars"></i>
+  </button>
+</nav>
+
+<section id="home" class="hero">
+  <div class="hero-text">
+    <p class="hero-greet">Hi, I'm</p>
+    <h1>Khushbu Kumari</h1>
+    <h3 class="typewriter"><span id="typewriterText"></span><span class="cursor">|</span></h3>
+    <p class="hero-desc">
+      3rd-year B.Tech CSE student at <strong>IIIT Guwahati</strong>, building
+      database-driven web projects and learning something new every sprint.
+    </p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn btn-fill">View Projects</a>
+      <a href="resume.html" class="btn btn-outline"><i class="fas fa-download"></i> Download Resume</a>
+    </div>
+    <div class="hero-socials">
+      <a href="https://github.com/khushbu-stack" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/khushbu-kumari-415380367?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=khu050707@gmail.com" target="_blank">
+    <i class="fas fa-envelope"></i>
+</a>
+    </div>
+  </div>
+
+  <div class="circle-wrap">
+    <div class="circle">
+      <svg viewBox="0 0 250 250" class="avatar-svg" aria-label="Illustration of a developer working at a laptop">
+        <circle cx="125" cy="125" r="125" class="avatar-bg"/>
+        <rect x="55" y="150" width="140" height="14" rx="7" class="desk"/>
+        <rect x="75" y="100" width="100" height="62" rx="6" class="laptop-base"/>
+        <rect x="83" y="108" width="84" height="46" rx="3" class="laptop-screen"/>
+        <text x="125" y="135" text-anchor="middle" class="laptop-code">&lt;/&gt;</text>
+        <circle cx="125" cy="75" r="26" class="head"/>
+        <path d="M99 68 Q125 45 151 68 L151 60 Q125 50 99 60 Z" class="hair"/>
+        <path d="M88 150 Q88 110 125 108 Q162 110 162 150 Z" class="body-shape"/>
+      </svg>
+    </div>
+    <span class="badge badge-1">SQL</span>
+    <span class="badge badge-2">JS</span>
+    <span class="badge badge-3">Java</span>
+  </div>
+</section>
+
+<section id="about" class="reveal">
+  <p class="eyebrow">About Me</p>
+  <h2>A bit about who I am</h2>
+  <div class="about-content">
+    <p>
+      I'm a Computer Science undergraduate at <strong>IIIT Guwahati</strong>
+      (Class of 2028), and most of what I build starts with understanding the
+      data first — how it's structured, how it flows, and how it should be
+      reported back.
+    </p>
+    <p>
+      I work comfortably across the stack: <strong>C, Java and Python</strong> for
+      logic, <strong>SQL</strong> for data, and <strong>HTML5, CSS3 and JavaScript</strong>
+      for the interface people actually use. Outside of code, I use Git/GitHub
+      for version control, with VS Code and IntelliJ IDEA as my daily drivers.
+    </p>
+  </div>
+  <div class="about-stats">
+    <div class="stat-box"><span class="num">3rd</span><span>Year, B.Tech CSE</span></div>
+    <div class="stat-box"><span class="num">5+</span><span>Languages &amp; Tools</span></div>
+    <div class="stat-box"><span class="num">2</span><span>project Shipped</span></div>
+  </div>
+</section>
+
+<section id="education" class="reveal">
+  <p class="eyebrow">Background</p>
+  <h2>Education</h2>
+
+  <div class="edu-card">
+    <i class="fas fa-graduation-cap edu-icon"></i>
+
+    <div class="edu-content">
+      <h3>Indian Institute of Information Technology Guwahati</h3>
+
+      <p class="edu-meta">
+        Bachelor of Technology in Computer Science and Engineering
+      </p>
+
+      <p class="edu-date">
+        August 2024 – June 2028 | Guwahati, Assam
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="reveal">
+  <p class="eyebrow">What I work with</p>
+  <h2>Skills</h2>
+  <div class="cards">
+    <div class="card"><i class="fab fa-html5"></i><p>HTML5</p></div>
+    <div class="card"><i class="fab fa-css3-alt"></i><p>CSS3</p></div>
+    <div class="card"><i class="fab fa-js"></i><p>JavaScript</p></div>
+    <div class="card"><i class="fab fa-java"></i><p>Java</p></div>
+    <div class="card"><i class="fab fa-python"></i><p>Python</p></div>
+    <div class="card"><i class="fas fa-c"></i><p>C</p></div>
+    <div class="card"><i class="fas fa-database"></i><p>SQL</p></div>
+    <div class="card"><i class="fab fa-linux"></i><p>Linux</p></div>
+  </div>
+  <div class="tools-row">
+    <span class="tool-chip"><i class="fab fa-git-alt"></i> Git</span>
+    <span class="tool-chip"><i class="fab fa-github"></i> GitHub</span>
+    <span class="tool-chip"><i class="fas fa-code"></i> VS Code</span>
+    <span class="tool-chip"><i class="fas fa-laptop-code"></i> IntelliJ IDEA</span>
+  </div>
+</section>
+
+<section id="projects" class="reveal">
+  <p class="eyebrow">My Work</p>
+  <h2>Projects</h2>
+
+  <div class="project-grid">
+    <div class="project-card">
+      <div class="project-top">
+        <i class="fas fa-building-columns project-icon"></i>
+        <span class="project-pill">Database Design</span>
+      </div>
+      <h3>Property Management System</h3>
+      <p>
+        A full system for managing property sales and rentals between clients
+        and agents. Designed starting from an ER diagram, then built into a
+        working website that fetches live data and generates sales/rental reports.
+      </p>
+      <div class="project-tags">
+        <span>SQL</span><span>JavaScript</span><span>CSS</span><span>ER Modeling</span>
+      </div>
+       <!--  a href="#contact" class="project-link">
+     <Live link coming soon <i class="fas fa-arrow-right"></i>
+     --></a>
+    </div>
+
+    <div class="project-card">
+      <div class="project-top">
+        <i class="fas fa-laptop-code project-icon"></i>
+        <span class="project-pill">Personal Project</span>
+      </div>
+      <h3>Personal Portfolio Website</h3>
+      <p>
+        Designed and developed a responsive personal portfolio showcasing
+        academic achievements, projects, and skills. Implemented fluid
+        multi-device layouts using CSS Flexbox, Grid, and media queries, with
+        JavaScript-driven interactive components for cross-browser engagement.
+      </p>
+      <div class="project-tags">
+        <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Responsive Design</span>
+      </div>
+      <!-- <a href="#contact" class="project-link">Live link coming soon <i class="fas fa-arrow-right"></i></a> -->
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="reveal">
+  <p class="eyebrow">Get In Touch</p>
+  <h2>Contact</h2>
+  <p class="contact-sub">Open to internships, collaborations, and interesting problems involving data.</p>
+  <div class="contact-grid">
+    <a href="mailto:khu050707@gmail.com" class="contact-card">
+      <i class="fas fa-envelope"></i>
+      <div><span>Email</span><p>khu050707@gmail.com</p></div>
+    </a>
+    <a href="tel:+919216477378" class="contact-card">
+      <i class="fas fa-phone"></i>
+      <div><span>Phone</span><p>+91 9216477378</p></div>
+    </a>
+    <a href="https://github.com/khushbu-stack" target="_blank" rel="noopener" class="contact-card">
+      <i class="fab fa-github"></i>
+      <div><span>GitHub</span><p>github.com/khushbu-stack</p></div>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 Khushbu Kumari. Built with HTML, CSS &amp; JavaScript.</p>
+</footer>
+
+<script src="script2.js"></script>
+</body>
+</html>

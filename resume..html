@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Resume - Khushbu Kumari</title>
+<style>
+    @page {
+        size: A4;
+        margin: 20mm 15mm;
+        background-color: #ffffff;
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 11pt;
+        line-height: 1.4;
+        color: #333333;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .header {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .name {
+        font-size: 24pt;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin: 0 0 5px 0;
+        color: #111111;
+    }
+    
+    .contact-info {
+        font-size: 10pt;
+        color: #555555;
+    }
+    
+    .contact-info span {
+        margin: 0 8px;
+    }
+    
+    .section-title {
+        font-size: 13pt;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #222222;
+        border-bottom: 1px solid #222222;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        padding-bottom: 2px;
+        page-break-after: avoid;
+    }
+    
+    .item {
+        margin-bottom: 12px;
+        page-break-inside: avoid;
+    }
+    
+    .item-header {
+        display: table;
+        width: 100%;
+        margin-bottom: 4px;
+    }
+    
+    .item-title {
+        display: table-cell;
+        font-weight: bold;
+        text-align: left;
+    }
+    
+    .item-date {
+        display: table-cell;
+        text-align: right;
+        font-style: italic;
+        color: #444444;
+    }
+    
+    .item-subtitle-row {
+        display: table;
+        width: 100%;
+        margin-bottom: 4px;
+        font-style: italic;
+        color: #444444;
+    }
+    
+    .item-subtitle {
+        display: table-cell;
+        text-align: left;
+    }
+    
+    .item-location {
+        display: table-cell;
+        text-align: right;
+    }
+    
+    ul {
+        margin: 0;
+        padding-left: 20px;
+    }
+    
+    li {
+        margin-bottom: 4px;
+        text-align: justify;
+    }
+    
+    .skills-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 5px;
+    }
+    
+    .skills-table td {
+        padding: 4px 0;
+        vertical-align: top;
+    }
+    
+    .skills-label {
+        font-weight: bold;
+        width: 25%;
+    }
+    
+    .cert-item {
+        margin-bottom: 8px;
+    }
+</style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="name">Khushbu Kumari</div>
+        <div class="contact-info">
+            <span>+91 9216477378</span> | 
+            <span>khu050707@gmail.com</span> | 
+            <span>github.com/khushbu-stack</span>
+        </div>
+    </div>
+
+    <div class="section-title">Education</div>
+    <div class="item">
+        <div class="item-header">
+            <span class="item-title">Indian Institute of Information Technology Guwahati</span>
+            <span class="item-date">August 2024 - June 2028</span>
+        </div>
+        <div class="item-subtitle-row">
+            <span class="item-subtitle">Bachelor of Technology in Computer Science and Engineering</span>
+            <span class="item-location">Assam, Guwahati</span>
+        </div>
+        <div style="margin-top: 6px;">
+            <strong>Relevant Coursework:</strong> Data Structures & Algorithms, Object-Oriented Programming, Operating Systems, Database Management System, Computer Architecture, Discrete Mathematics
+        </div>
+    </div>
+
+    <div class="section-title">Technical Skills</div>
+    <table class="skills-table">
+        <tr>
+            <td class="skills-label">Programming Languages:</td>
+            <td>C, Java, Python</td>
+        </tr>
+        <tr>
+            <td class="skills-label">Web Technologies:</td>
+            <td>HTML5, CSS3, JavaScript</td>
+        </tr>
+        <tr>
+            <td class="skills-label">Developer Tools:</td>
+            <td>Git, GitHub, VS Code, IntelliJ IDEA</td>
+        </tr>
+        <tr>
+            <td class="skills-label">Operating Systems:</td>
+            <td>Linux</td>
+        </tr>
+    </table>
+
+    <div class="section-title">Projects</div>
+    <div class="item">
+        <div class="item-header">
+            <span class="item-title">Personal Portfolio Website</span>
+            <span class="item-date">June 2025</span>
+        </div>
+        <div class="item-subtitle-row">
+            <span class="item-subtitle">HTML5, CSS3, JavaScript, Responsive Design</span>
+            <span class="item-location">Personal Project</span>
+        </div>
+        <ul>
+            <li>Designed and developed a responsive personal portfolio website showcasing academic achievements, technical projects, and skills.</li>
+            <li>Implemented fluid multi-device layouts using CSS Flexbox, Grid, and media queries to achieve complete compatibility across mobile and desktop environments.</li>
+            <li>Utilized JavaScript to build interactive dynamic components, maximizing cross-browser accessibility and visual engagement.</li>
+        </ul>
+    </div>
+
+    <div class="section-title">Certifications & Simulations</div>
+    <div class="item">
+        <div class="cert-item">
+            <div class="item-header">
+                <span class="item-title">Deloitte Australia – Technology Job Simulation (Forage)</span>
+                <span class="item-date">2026</span>
+            </div>
+            <ul>
+                <li>Completed practical, industry-modeled tasks covering core software development workflows, architectural analysis, and technical consulting frameworks.</li>
+            </ul>
+        </div>
+        
+        <div class="cert-item" style="margin-top: 8px;">
+            <div class="item-header">
+                <span class="item-title">Tata Group – GenAI-Powered Data Analytics Job Simulation (Forage)</span>
+                <span class="item-date">2026</span>
+            </div>
+            <ul>
+                <li>Leveraged Generative AI tools and prompts to accelerate data cleaning, predictive modeling, and business insight extraction; utilized <strong>IntelliJ IDEA</strong> to execute data processing scripts and analyze algorithmic efficiency.</li>
+            </ul>
+        </div>
+
+        <div class="cert-item" style="margin-top: 8px;">
+            <div class="item-header">
+                <span class="item-title">AI for Techies Workshop – AI-based Coding & Debugging</span>
+                <span class="item-date">2026</span>
+            </div>
+            <ul>
+                <li>Completed an intensive technical mini-workshop focused on modern debugging methodologies, code profiling, and automated error detection using generative AI models.</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

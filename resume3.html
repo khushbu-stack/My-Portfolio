@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Khushbu Kumari — Resume</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background:#0b0b0f;
+    color:#f4f4f6;
+    font-family:'Poppins',Arial,sans-serif;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+  }
+  header {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 6%;
+    border-bottom:1px solid #2a2a35;
+  }
+  .logo { color:#ff3df5; font-size:22px; font-weight:700; }
+  .logo span { color:#f4f4f6; }
+  .actions { display:flex; gap:14px; align-items:center; }
+  .actions a {
+    text-decoration:none;
+    font-size:0.85rem;
+    font-weight:600;
+    padding:9px 18px;
+    border-radius:20px;
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    transition:transform 0.2s, background 0.2s;
+  }
+  .back-link { color:#a3a3b0; border:1px solid #2a2a35; }
+  .back-link:hover { color:#ff3df5; border-color:#ff3df5; }
+  .dl-link { color:#1a0019; background:#ff3df5; }
+  .dl-link:hover { transform:translateY(-2px); }
+  .viewer-wrap {
+    flex:1;
+    display:flex;
+    justify-content:center;
+    padding:30px 4%;
+  }
+  .resume-image {
+    width: 100%;
+    max-width: 900px;
+    display: block;
+    margin: auto;
+    border-radius: 12px;
+    border: 1px solid #2a2a35;
+    background: white;
+}
+  iframe {
+    width:100%;
+    max-width:900px;
+    height:85vh;
+    border:1px solid #2a2a35;
+    border-radius:12px;
+    background:#fff;
+  }
+  @media (max-width:600px){
+    header { flex-direction:column; gap:14px; align-items:flex-start; }
+    iframe { height:70vh; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Khushbu<span>.</span></div>
+  <div class="actions">
+    <a href="index3.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+  <a href="img.png" download class="dl-link">
+    <i class="fas fa-download"></i> Download
+</a>
+  </div>
+</header>
+
+<div class="viewer-wrap">
+  <img src="img.png" alt="Khushbu Kumari Resume" class="resume-image">
+</div>
+
+</body>
+</html>
