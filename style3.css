@@ -324,11 +324,17 @@ section h2 {
   margin-bottom: 36px;
 }
 
-/* scroll reveal */
+/* ===== Scroll reveal =====
+   Sections are VISIBLE by default. JS adds "pre-reveal" (which hides
+   them) only after it has successfully loaded, then swaps to "in-view"
+   once each section scrolls into frame. If script2.js ever fails to
+   load, sections simply stay visible instead of being stuck blank. */
 .reveal {
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+.reveal.pre-reveal {
   opacity: 0;
   transform: translateY(30px);
-  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
 }
 .reveal.in-view {
   opacity: 1;
@@ -378,37 +384,51 @@ section h2 {
 
 /* ===== Education ===== */
 .edu-card {
+  max-width: 800px;
   background: var(--panel);
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  padding: 32px;
-  max-width: 760px;
+  border: 2px solid var(--border);
+  border-radius: 18px;
+  padding: 30px;
   display: flex;
-  gap: 22px;
-  align-items: flex-start;
-  transition: border-color 0.25s, transform 0.25s;
+  align-items: center;
+  gap: 25px;
+  transition: all 0.35s ease;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 .edu-card:hover {
+  transform: translateY(-8px);
   border-color: var(--pink);
-  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(255,61,245,0.30);
 }
 .edu-icon {
-  font-size: 1.8rem;
+  font-size: 50px;
   color: var(--pink);
   flex: 0 0 auto;
-  margin-top: 4px;
+  transition: 0.3s;
 }
-.edu-card h3 {
-  font-size: 1.15rem;
-  margin-bottom: 4px;
+.edu-card:hover .edu-icon {
+  transform: rotate(-10deg) scale(1.15);
+}
+.edu-content h3 {
+  font-size: 24px;
+  margin-bottom: 8px;
+  transition: 0.3s;
+}
+.edu-card:hover h3 {
+  color: var(--pink);
 }
 .edu-meta {
-  color: var(--muted);
-  font-size: 0.88rem;
-  margin-bottom: 14px;
+  color: #d6d6d6;
+  font-size: 18px;
+  margin-bottom: 8px;
 }
 .edu-meta span {
   color: var(--pink);
+}
+.edu-date {
+  color: var(--muted);
+  font-size: 15px;
 }
 .edu-course-label {
   font-size: 0.78rem;
@@ -739,56 +759,6 @@ footer {
   .hero-desc { margin-left: auto; margin-right: auto; }
   .circle { width: 200px; height: 200px; }
   .cert-item { flex-direction: column; }
-}
-.edu-card{
-    max-width:800px;
-    background:#16161d;
-    border:2px solid #2a2a35;
-    border-radius:18px;
-    padding:30px;
-    display:flex;
-    align-items:center;
-    gap:25px;
-    transition:all .35s ease;
-    cursor:pointer;
-    box-shadow:0 8px 20px rgba(0,0,0,.3);
-}
-
-.edu-card:hover{
-    transform:translateY(-8px);
-    border-color:#ff3df5;
-    box-shadow:0 18px 40px rgba(255,61,245,.30);
-}
-
-.edu-icon{
-    font-size:50px;
-    color:#ff3df5;
-    transition:.3s;
-}
-
-.edu-card:hover .edu-icon{
-    transform:rotate(-10deg) scale(1.15);
-}
-
-.edu-content h3{
-    font-size:24px;
-    margin-bottom:8px;
-    transition:.3s;
-}
-
-.edu-card:hover h3{
-    color:#ff3df5;
-}
-
-.edu-meta{
-    color:#d6d6d6;
-    font-size:18px;
-    margin-bottom:8px;
-}
-
-.edu-date{
-    color:#a3a3b0;
-    font-size:15px;
 }
 
 @media (max-width: 480px) {

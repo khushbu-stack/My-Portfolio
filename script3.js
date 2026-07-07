@@ -66,12 +66,19 @@ function typeLoop() {
 typeLoop();
 
 // ===== Scroll-triggered reveal animations =====
+// IMPORTANT: sections start VISIBLE by default. We only add the
+// "pre-reveal" (hidden) class here, once JS has actually loaded and run.
+// If this script ever fails to load, the sections simply stay visible
+// instead of being permanently stuck at opacity: 0.
 const revealEls = document.querySelectorAll('.reveal');
+
+revealEls.forEach(el => el.classList.add('pre-reveal'));
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('in-view');
+      entry.target.classList.remove('pre-reveal');
       observer.unobserve(entry.target);
     }
   });
